@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: study_redis
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/study_redis?serverTimezone=Asia/Seoul&characterEncoding=UTF-8&rewriteBatchedStatements=true
+    username: root
+    password: 12345678
+
+  # JPA
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  # Redis
+  data:
+    redis:
+      host: localhost
+      port: 6379
